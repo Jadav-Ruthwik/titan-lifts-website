@@ -25,7 +25,7 @@ export default function Contact() {
                 {
                   icon: Phone,
                   title: "Phone",
-                  detail: "+91 8074712198",
+                  detail: "+91 7036798322",
                 },
                 {
                   icon: Mail,
