@@ -19,7 +19,7 @@ export default function CTA() {
         <div className="flex flex-wrap gap-3">
           <Link
             href="/contact"
-            className="btn-primary bg-white !text-titan-navy hover:!bg-slate-100"
+            className="btn-primary !bg-white !text-[#0B2D50] hover:!bg-black hover:!text-white transition-colors duration-300"
           >
             Request a quote <ArrowUpRight size={16} />
           </Link>

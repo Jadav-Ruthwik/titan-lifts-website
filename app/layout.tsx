@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Titan Lifts | Elevating Every Journey",
   description:
     "Elevator installation, modernisation, maintenance and vertical mobility solutions from Titan Lifts.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 export default function RootLayout({
   children,
