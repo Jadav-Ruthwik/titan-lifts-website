@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: #fff; color: #111827; font-family: Arial, Helvetica, sans-serif; }
+.container-shell { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+.nav-link { position: relative; color: #475569; font-size: 14px; font-weight: 650; transition: color .2s; }
+.nav-link:hover { color: #0c3c78; }
+.nav-link::after { content: ''; position: absolute; left: 0; right: 100%; bottom: -9px; height: 2px; background: #0c3c78; transition: right .2s; }
+.nav-link:hover::after { right: 0; }
+.btn-primary { display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; background: #08264d; color: #fff; padding: 14px 22px; font-size: 13px; font-weight: 750; letter-spacing: .01em; transition: background .2s, transform .2s, box-shadow .2s; box-shadow: 0 8px 22px rgba(8,38,77,.16); }
+.btn-primary:hover { background: #0d4487; transform: translateY(-2px); box-shadow: 0 12px 28px rgba(8,38,77,.22); }
+.btn-outline { display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,.55); border-radius: 999px; color: #fff; padding: 13px 21px; font-size: 13px; font-weight: 700; transition: background .2s; }
+.btn-outline:hover { background: rgba(255,255,255,.13); }
+.eyebrow { color: #376a9f; font-size: 11px; font-weight: 800; letter-spacing: .22em; text-transform: uppercase; }
+.section-title { color: #071d3b; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; letter-spacing: -.045em; line-height: 1.08; }
+.footer-heading { color: white; font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.field-label { display: flex; flex-direction: column; gap: 9px; color: #334155; font-size: 12px; font-weight: 750; }
+.field-input { width: 100%; border: 1px solid #dbe2ea; border-radius: 12px; background: #fbfcfe; padding: 13px 14px; color: #0f172a; font-size: 14px; font-weight: 450; outline: none; transition: border .2s, box-shadow .2s; }
+.field-input:focus { border-color: #4776a9; box-shadow: 0 0 0 3px rgba(71,118,169,.12); }
+.field-input::placeholder { color: #9aa7b7; }
+.hero-overlay { background: linear-gradient(90deg, rgba(4,20,42,.91) 0%, rgba(4,20,42,.76) 47%, rgba(4,20,42,.2) 100%); }
+@media (max-width: 640px) { .container-shell { width: min(100% - 32px, 1160px); } }
